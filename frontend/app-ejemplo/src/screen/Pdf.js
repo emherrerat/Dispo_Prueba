@@ -43,7 +43,7 @@ const Pdf = () => {
         setQuestion('');
         setResult(response.data.text);
         const jsonData = response.data;
-        setResult(`${response.data.text} y los token utilizados fueron ${response.data.text.length}`);
+        setResult(`${response.data.text} y los token utilizados fueron ${jsonData.token}`);
       } else {
         console.log('Error en la respuesta:', response.statusText);
       }
