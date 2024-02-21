@@ -91,7 +91,7 @@ app.post('/nombres', (req, res) => {
 import { OpenAI } from '@langchain/openai';
 // Crear una instancia de Configuration con tu clave API
 const configuration = new OpenAI({
-    openAIApiKey: "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",
+    openAIApiKey: "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",
 });
 
 // Crear una instancia de OpenAI con la configuración

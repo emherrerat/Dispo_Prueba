@@ -19,6 +19,7 @@ const getResultFromOpenApi = async () => {
 
         const jsonData = response.data;
         setResult(`${jsonData.result} y los token utilizados fueron ${jsonData.token}`);
+
     } catch (error) {
         console.error('Error al obtener resultados de la API:', error);
     }

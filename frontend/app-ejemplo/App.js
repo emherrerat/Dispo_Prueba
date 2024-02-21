@@ -11,6 +11,21 @@ export default function App() {
     );
 }
 
+
+/**
+ * Metodo para llamar al splash
+ * const Stack = createNativeStackNavigator();
+
+export default function App() {
+  return (
+    <NavigationContainer>
+      <Stack.Navigator headerMode="none">
+        <Stack.Screen name="Splash" component={Splash} />
+        <Stack.Screen name="MainScreen" component={Navigation} />
+      </Stack.Navigator>
+    </NavigationContainer>
+  );**/
+
 const styles = StyleSheet.create({
     container: {
         flex: 1,

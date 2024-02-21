@@ -10,7 +10,7 @@ const Pdf = () => {
 
   const handleFilePicker = async () => {
     console.log('Seleccionar PDF...');
-        let result = await ExpoDocumentPicker.getDocumentAsync({ copyToCacheDirectory: true });
+        let result = await ExpoDocumentPicker.getDocumentAsync({ copyToCacheDirectory: true});
         setPdfDoc(result.assets);
         console.log(result.assets);
         console.log('Resultado de ExpoDocumentPicker:', result);
@@ -41,7 +41,9 @@ const Pdf = () => {
 
       if (response.status === 200) {
         setQuestion('');
-        setResult(response.data.text `y los token utilizados fueron ${response.data.length}`);
+        setResult(response.data.text);
+        const jsonData = response.data;
+        setResult(`${response.data.text} y los token utilizados fueron ${response.data.text.length}`);
       } else {
         console.log('Error en la respuesta:', response.statusText);
       }

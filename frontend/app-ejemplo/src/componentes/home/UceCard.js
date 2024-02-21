@@ -10,7 +10,7 @@ const github = <Icon name={'github'} size={30} color={'black'}/>
 const youtube = <Icon name={'video-library'} size={30} color={'black'}/>
 const UceCard = () => {
     const user = {
-        avatar: "frontend/app-ejemplo/assets/ima.jpeg",
+        avatar: "https://studio.youtube.com/channel/UCH8mJKRvLTYv8GgtrJbIHGQ/editing/images",
         coverPhoto: "https://i.pinimg.com/564x/f0/dc/bd/f0dcbdd092336fdbb3099b4172fdbcb5.jpg",
         name: "Elvis Herrera"
     }
